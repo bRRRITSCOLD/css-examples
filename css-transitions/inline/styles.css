@@ -1,0 +1,19 @@
+p.box {
+  background: #9b59b6;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+p.animated {
+  transition: transform 2s cubic-bezier(.175, .885, .32, 1.275) 1s, background-color .5s linear;
+}
+
+p.box:hover {
+  transform: translateX(300px);
+  background-color: teal;
+}

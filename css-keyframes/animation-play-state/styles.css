@@ -1,0 +1,33 @@
+p.box {
+  background: #9b59b6;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  animation-name: slideRight;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-play-state: paused;
+}
+
+p.alternate {
+  animation-direction: alternate;
+}
+
+p.reverse {
+  animation-direction: reverse;
+}
+
+p.box:hover {
+  animation-play-state: running;
+}
+
+@keyframes slideRight {
+  100% {
+    transform: translateX(500px);
+  }
+}

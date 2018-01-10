@@ -1,0 +1,36 @@
+p.box {
+  background: #2ecc71;
+  height: 100px;
+  line-height:100px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+p.box:hover {
+  animation-name: changecolor;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+
+p.forwards {
+  animation-fill-mode: forwards;
+}
+
+p.backwards {
+  animation-fill-mode: backwards;
+}
+
+p.both {
+  animation-fill-mode: both;
+}
+
+@keyframes changecolor {
+  0% {
+    background-color: #f1c40f;
+  }
+  100% {
+    background-color: #e74c3c;
+  }
+}
